@@ -7,6 +7,7 @@ namespace Inventory_System
         Dashboard dashboard = new Dashboard();
         Inventory inventory = new Inventory();
         History history = new History();
+        frmLogin frmlogin = new frmLogin();
 
         public frmMain()
         {
@@ -98,6 +99,12 @@ namespace Inventory_System
         private void btnExit_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            frmlogin.Show();
+            this.Close();
         }
     }
 }

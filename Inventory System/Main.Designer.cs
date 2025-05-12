@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             pnlSidebar = new Panel();
+            btnUsers = new Button();
             label3 = new Label();
             btnInventory = new Button();
             btnDashboard = new Button();
@@ -49,6 +50,7 @@
             // pnlSidebar
             // 
             pnlSidebar.BackColor = Color.FromArgb(17, 17, 17);
+            pnlSidebar.Controls.Add(btnUsers);
             pnlSidebar.Controls.Add(label3);
             pnlSidebar.Controls.Add(btnInventory);
             pnlSidebar.Controls.Add(btnDashboard);
@@ -59,10 +61,28 @@
             pnlSidebar.MaximumSize = new Size(265, 680);
             pnlSidebar.MinimumSize = new Size(64, 680);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(64, 680);
+            pnlSidebar.Size = new Size(265, 680);
             pnlSidebar.TabIndex = 1;
             pnlSidebar.MouseEnter += pnlSidebar_MouseEnter;
             pnlSidebar.MouseLeave += pnlSidebar_MouseLeave;
+            // 
+            // btnUsers
+            // 
+            btnUsers.BackColor = Color.FromArgb(17, 17, 17);
+            btnUsers.FlatAppearance.BorderSize = 0;
+            btnUsers.FlatAppearance.MouseDownBackColor = Color.FromArgb(51, 51, 51);
+            btnUsers.FlatStyle = FlatStyle.Flat;
+            btnUsers.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnUsers.ForeColor = Color.FromArgb(255, 36, 0);
+            btnUsers.Image = (Image)resources.GetObject("btnUsers.Image");
+            btnUsers.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUsers.Location = new Point(-3, 317);
+            btnUsers.Name = "btnUsers";
+            btnUsers.Padding = new Padding(10, 0, 0, 0);
+            btnUsers.Size = new Size(265, 52);
+            btnUsers.TabIndex = 8;
+            btnUsers.Text = "Users";
+            btnUsers.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -130,6 +150,7 @@
             btnLogout.TabIndex = 6;
             btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
             // 
             // btnHistory
             // 
@@ -158,9 +179,9 @@
             // pnlContainer
             // 
             pnlContainer.Dock = DockStyle.Fill;
-            pnlContainer.Location = new Point(64, 52);
+            pnlContainer.Location = new Point(265, 52);
             pnlContainer.Name = "pnlContainer";
-            pnlContainer.Size = new Size(1048, 628);
+            pnlContainer.Size = new Size(847, 628);
             pnlContainer.TabIndex = 3;
             // 
             // panel1
@@ -170,10 +191,10 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(lblHeader);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(64, 0);
+            panel1.Location = new Point(265, 0);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(30, 15, 15, 0);
-            panel1.Size = new Size(1048, 52);
+            panel1.Size = new Size(847, 52);
             panel1.TabIndex = 5;
             // 
             // btnExit
@@ -182,7 +203,7 @@
             btnExit.AutoSize = true;
             btnExit.Cursor = Cursors.Hand;
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
-            btnExit.Location = new Point(1006, 11);
+            btnExit.Location = new Point(805, 11);
             btnExit.Name = "btnExit";
             btnExit.Padding = new Padding(10, 5, 10, 5);
             btnExit.Size = new Size(30, 25);
@@ -195,7 +216,7 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Image = (Image)resources.GetObject("label1.Image");
-            label1.Location = new Point(1642, 30);
+            label1.Location = new Point(1441, 30);
             label1.Name = "label1";
             label1.Padding = new Padding(10, 5, 10, 5);
             label1.Size = new Size(20, 25);
@@ -247,5 +268,6 @@
         private Label label1;
         private Label lblHeader;
         private Label btnExit;
+        public Button btnUsers;
     }
 }
