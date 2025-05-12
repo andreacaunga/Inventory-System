@@ -1,6 +1,6 @@
 ﻿namespace Inventory_System
 {
-    partial class History
+    partial class Users
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,25 +30,25 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            dgvHistory = new DataGridView();
+            dgvUsers = new DataGridView();
             itemName = new DataGridViewTextBoxColumn();
             itemType = new DataGridViewTextBoxColumn();
             quantity = new DataGridViewTextBoxColumn();
             itemID = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dgvHistory).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             SuspendLayout();
             // 
-            // dgvHistory
+            // dgvUsers
             // 
-            dgvHistory.AllowUserToAddRows = false;
-            dgvHistory.AllowUserToResizeColumns = false;
-            dgvHistory.AllowUserToResizeRows = false;
-            dgvHistory.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            dgvHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvHistory.BackgroundColor = Color.FromArgb(34, 34, 34);
-            dgvHistory.BorderStyle = BorderStyle.None;
-            dgvHistory.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dgvHistory.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvUsers.AllowUserToAddRows = false;
+            dgvUsers.AllowUserToResizeColumns = false;
+            dgvUsers.AllowUserToResizeRows = false;
+            dgvUsers.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dgvUsers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUsers.BackgroundColor = Color.FromArgb(34, 34, 34);
+            dgvUsers.BorderStyle = BorderStyle.None;
+            dgvUsers.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dgvUsers.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(34, 34, 34);
             dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
@@ -56,12 +56,12 @@
             dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(51, 51, 51);
             dataGridViewCellStyle1.SelectionForeColor = Color.White;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgvHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvHistory.Columns.AddRange(new DataGridViewColumn[] { itemName, itemType, quantity, itemID });
-            dgvHistory.GridColor = Color.FromArgb(34, 34, 34);
-            dgvHistory.Location = new Point(85, 141);
-            dgvHistory.Name = "dgvHistory";
+            dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUsers.Columns.AddRange(new DataGridViewColumn[] { itemName, itemType, quantity, itemID });
+            dgvUsers.GridColor = Color.FromArgb(34, 34, 34);
+            dgvUsers.Location = new Point(82, 109);
+            dgvUsers.Name = "dgvUsers";
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(34, 34, 34);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -69,12 +69,12 @@
             dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(51, 51, 51);
             dataGridViewCellStyle2.SelectionForeColor = Color.White;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgvHistory.RowHeadersVisible = false;
-            dgvHistory.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dgvHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvHistory.Size = new Size(654, 395);
-            dgvHistory.TabIndex = 3;
+            dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvUsers.RowHeadersVisible = false;
+            dgvUsers.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dgvUsers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUsers.Size = new Size(654, 395);
+            dgvUsers.TabIndex = 3;
             // 
             // itemName
             // 
@@ -103,23 +103,21 @@
             itemID.Name = "itemID";
             itemID.Visible = false;
             // 
-            // History
+            // Users
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 34, 34);
-            Controls.Add(dgvHistory);
-            MaximumSize = new Size(1048, 628);
-            MinimumSize = new Size(847, 628);
-            Name = "History";
+            Controls.Add(dgvUsers);
+            Name = "Users";
             Size = new Size(1048, 628);
-            ((System.ComponentModel.ISupportInitialize)dgvHistory).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dgvHistory;
+        private DataGridView dgvUsers;
         private DataGridViewTextBoxColumn itemName;
         private DataGridViewTextBoxColumn itemType;
         private DataGridViewTextBoxColumn quantity;
