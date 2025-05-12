@@ -83,6 +83,7 @@
             btnUsers.TabIndex = 8;
             btnUsers.Text = "Users";
             btnUsers.UseVisualStyleBackColor = false;
+            btnUsers.Click += btnUsers_Click;
             // 
             // label3
             // 

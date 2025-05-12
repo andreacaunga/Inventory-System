@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Inventory_System
 {
-    public partial class History : UserControl
+    public partial class Users : UserControl
     {
-        public History()
+        public Users()
         {
             InitializeComponent();
-            UIDesign.DGVTheme(dgvHistory);
+            UIDesign.DGVTheme(dgvUsers);
         }
     }
 }

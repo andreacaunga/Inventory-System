@@ -7,6 +7,7 @@ namespace Inventory_System
         Dashboard dashboard = new Dashboard();
         Inventory inventory = new Inventory();
         History history = new History();
+        Users users = new Users();
         frmLogin frmlogin = new frmLogin();
 
         public frmMain()
@@ -105,6 +106,15 @@ namespace Inventory_System
         {
             frmlogin.Show();
             this.Close();
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            users.Dock = DockStyle.Fill;
+            pnlContainer.Controls.Add(users);
+            users.BringToFront();
+
+            lblHeader.Text = "USERS";
         }
     }
 }
